@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 include(CTest)
 
 find_package(PkgConfig REQUIRED)
-pkg_check_modules(GSTREAMER REQUIRED IMPORTED_TARGET gstreamer-1.0 gstreamer-audio-1.0)
+pkg_check_modules(GSTREAMER REQUIRED IMPORTED_TARGET gstreamer-1.0 gstreamer-audio-1.0 gstreamer-pbutils-1.0)
 pkg_check_modules(GTK3 REQUIRED IMPORTED_TARGET gtk+-3.0)
 
 add_executable(demo_app cpp/main/main.cpp)
